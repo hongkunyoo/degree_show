@@ -1,0 +1,27 @@
+/*
+.list_item::before {
+	content: "{";
+}
+
+.list_item::after {
+	content: "}";
+}*/
+
+#message_list {
+    width: 300px;
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.mykey {
+	color: red;	
+}
+
+.mykey::after { 
+    content: ":";
+}
+
+.value {
+	color: blue;
+}
