@@ -221,9 +221,9 @@ $(function(){
 		var ret = "";
 		for (var i in item) {
 			if (filter.indexOf(i) != -1)
-				if(filter.indexOf(i) == 1){	ret += ("<div><span class='value'>"+itme[i]+" : ");	}
-				else if(filter.indexOf(i) == 2){	ret += ("<div><span class='value'>"+item[i]);	}
-				else if(filter.indexOf(i) == 3){	ret += ("<div><span class='value'> ("+item[i]+")");	}
+				if(filter.indexOf(i) == 1){	ret += ("<div><span class='value'>"+itme[i]+" : </span></div>");	}
+				else if(filter.indexOf(i) == 2){	ret += ("<div><span class='value'>"+item[i]+"</span></div>");	}
+				else if(filter.indexOf(i) == 3){	ret += ("<div><span class='value'> ("+item[i]+")</span></div>");	}
 				//ret += ("<div><span class='mykey'>"+i+"</span><span class='value'>"+item[i] +"</span></div>");
 		}	
 		// var d = new Date();
