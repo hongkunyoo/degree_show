@@ -223,9 +223,9 @@ $(function(){
 		var ret = "";
 		for (var i in item) {
 			if (filter.indexOf(i) != -1){
-				if(i == "sender"){	ret += ("<span class='value'><i>"+item[i]+"</i></span>");	}
-				else if(i == "content"){	ret += ("<div><span class='value'>\""+item[i]+"\"</span></div>");	}
-				else if(i == "time"){	ret += ("<span class='value'><i> ("+item[i]+")</i></span>");	}
+				if(i == "sender"){	ret += ("<div class='chat_sub'><span class='value'><i>"+item[i]+"</i></span>");	}
+				else if(i == "content"){	ret += ("<div><span class='value'>"+item[i]+"</span></div>");	}
+				else if(i == "time"){	ret += ("<span class='value'><i> ("+item[i]+")</i></span></div>");	}
 				// ret += ("<div><span class='mykey'>"+i+"</span><span class='value'>"+item[i] +"</span></div>");
 			}
 		}	

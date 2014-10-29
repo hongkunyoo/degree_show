@@ -426,6 +426,11 @@ div#msg_container {
 	overflow-x: hidden;
 }
 
+div.chat_sub {
+	font-size: 10px;
+	margin-top: 2px;
+}
+
 div.position {
 	height: 15px;
 	width: 40px;
@@ -441,7 +446,8 @@ div.position {
 }
 
 div.list_item {
-	border-bottom: grey 1px solid;
+	border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+	padding: 2px;
 }
 
 a{ color: blue; }
