@@ -231,7 +231,8 @@ $(function(){
 		// ret += ("<div><span class='mykey'>time</span><span class='value'>"+time +"</span></div> \n}");
 		ret += "\n";
 		return ret;
-	
+	};
+
 	function fillZeor(number) {
 		var str = "" + number;
 		if (str.length == 1) {
@@ -241,4 +242,4 @@ $(function(){
 	}
 
 	init();
-	};
+});
