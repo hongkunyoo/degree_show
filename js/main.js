@@ -197,13 +197,6 @@ var put = function(){
 	target.removeChild(target.lastChild);
 };
 
-// 이 부분은 내쪽에서 호출함 (맨 밑에 코드 참고 하셈)
-// window.onload = function(){	init();	};
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-///////// 내가 추가한 부분
-////////////////////////////////////////////////////////////////////////////////////////////////////
 $(function(){
 	$.main = {};
 	var mClient = new MobileClient(GlobalVariables.REAL_URL, GlobalVariables.REAL_KEY);
@@ -221,26 +214,23 @@ $(function(){
 	
 	var filter = ["type", "sender", "content", "time"];	
 
-	//////////////////////////////////////////////////
-	// 화정아 여기를 에쁘게 만들면 됨!!
-	//////////////////////////////////////////////////
 	function prettify(item) {
 		var d = new Date();
 		var time = fillZeor(d.getHours()) + ":" + fillZeor(d.getMinutes());
 		item.time = time;
-		var ret = "{ \n";
+		var ret = "";
 		for (var i in item) {
 			if (filter.indexOf(i) != -1)
-				ret += ("<div><span class='mykey'>"+i+"</span><span class='value'>"+item[i] +"</span></div>");
+				if(filter.indexOf(i) == 1){	ret += ("<div><span class='value'>"+itme[i]+" : ");	}
+				else if(filter.indexOf(i) == 2){	ret += ("<div><span class='value'>"+item[i]);	}
+				else if(filter.indexOf(i) == 3){	ret += ("<div><span class='value'> ("+item[i]+")");	}
+				//ret += ("<div><span class='mykey'>"+i+"</span><span class='value'>"+item[i] +"</span></div>");
 		}	
 		// var d = new Date();
 		// var time = fillZeor(d.getHours()) + ":" + fillZeor(d.getMinutes());
 		// ret += ("<div><span class='mykey'>time</span><span class='value'>"+time +"</span></div> \n}");
-		ret += "\n}";
+		ret += "\n";
 		return ret;
-	}
-	////////////////////////////////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	function fillZeor(number) {
 		var str = "" + number;

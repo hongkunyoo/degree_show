@@ -423,6 +423,8 @@ div#msg_container {
 	position: absolute;
 	top: 0px;
 	left: 720px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 div.position {
