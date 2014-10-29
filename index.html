@@ -1,41 +1,108 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Chupa Messages</title>
-        <meta name="description" content="chupa manage page">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<!--<script type="text/javascript" src="./js/main.js"></script>-->
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<meta property="og:title" content="2014 국민대학교 시각디자인학과 기획전 졸업전 PARTITION PARTY">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10727421_714992981912551_282647753_a.jpg">
+		<meta property="og:url" content="http://www.kmuvcd.com">
+	</head>
+	<body>
+		<div id="moving_images_slow"><img width="380" height="360" src="./source/pngs/3.png"><img width="480" height="400" src="./source/pngs/4.png"><img width="540" height="280" src="./source/pngs/5.png"><img width="340" height="440" src="./source/pngs/6.png"><img width="600" height="580" src="./source/pngs/12.png"></div>
+		<div id="merged_cells_sheet"></div>
+		<div id="moving_images_medium"><img width="460" height="260" src="./source/pngs/2.png"><img width="220" height="180" src="./source/pngs/7.png"><img width="260" height="220" src="./source/pngs/8.png"><img width="300" height="320" src="./source/pngs/9.png"><img width="180" height="160" src="./source/pngs/13.png"><img width="100" height="140" src="./source/pngs/16.png"></div>
+		<div id="moving_images_fast"><img width="40" height="20" src="./source/pngs/1.png"><img width="60" height="120" src="./source/pngs/14.png"><img width="40" height="100" src="./source/pngs/15.png"></div>
+		<div id="sheet_edge"></div>
+		<div id="spread_sheet"></div>
+	
+		<div  id="live_contents">
+			<iframe id="video" width="740" height="460" src="http://www.ustream.tv/embed/19155122?v=3&amp;wmode=direct" scrolling="no" frameborder="0"></iframe>	
+			<div id="msg_container"></div>
+		</div>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<table id="information">
+			<tr>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+				<td class="invisible"></td>
+			</tr>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" href="favicon.ico"/>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+			<tr>
+				<td class="visible" colspan="6"><b>INFORMATION</b></td>
+			</tr>
+			<tr>
+				<td class="visible" colspan="4">구분</td>
+				<td class="visible" colspan="5">기획전시</td>
+			</tr>
+			<tr>
+				<td class="visible" colspan="4">제목</td>
+				<td class="visible" colspan="10">파티션파티 PARTITION PARTY</td>
+			</tr>
+			<tr>
+				<td class="visible" colspan="4">일시</td>
+				<td class="visible" colspan="9">2014.10.31.~11.14.</td>
+			</tr>
+			<tr>
+				<td class="invisible" colspan="4"></td>
+				<td class="visible" colspan="9">오프닝 : 10.31.,7pm</td>
+			</tr>
+			<tr>
+				<td class="visible" colspan="4">장소</td>
+				<td class="visible" colspan="15">인디아트홀 공 / 귀소공간</td>		
+			</tr>
+				<tr>
+				<td class="visible" colspan="4">주최/주관</td>
+				<td class="visible" colspan="10">국민대학교 시각디자인학과</td>	
+			</tr>
+			<tr>
+				<td class="visible" colspan="4" rowspan="1" height="20">후원</td>
+				<td class="visible" colspan="14" rowspan="8" height = "100" width="500">
+					<img id="supporters" width="275" height="108" src="./source/pngs/logos.png">
+				</td>	
+			</tr>
+				<td class="invisible" rowspan="6"></td>
+		</table>
+				
 
-        <!-- Add your site or application content here -->
-        <div align="center">
-        	<div id='message_list'></div>
-        	<div id='bottom_body'></div>
-        </div>
+		<div class="draggable" id="category">국민대학교 시각디자인학과 기획전 KMUVCD WORKS ON VIEW</div>
+		<div class="draggable" id="title">&nbsp;파티션파티 PARTITION PARTY</div>
+		<div class="draggable" id="date">20141031 ~ 20141114</div>
+		<div class="draggable" id="location">인디아트홀 공 / 귀소공간</div>
+		<div class="draggable" id="homepage">WWW.KMUVCD.COM</div>			
+		<div class="draggable" id="introduction">파티션은 경계(partition)의 형식이 남아있는 공동 작업 공간이다. 우리는 그 분할된 공간 안에서 각자의 작업을 진행하고, 서로 영향을 주고 받으며 발전해 나간다. 그 과정에서 작업 뿐만 아니라 토론과 워크샵 등 다양한 활동을 함께 하며 사고를 공유하고 확장한다. 기획전 ‘파티션파티’는 파티션이라는 공간에서 이루어진 다년간의 작업과 경험을 관객에게로 확장하고자 한다. 관객들은 일방적으로 전시를 관람하는 것이 아니라 워크샵, 컨퍼런스, 디자이너와의 토론, 이벤트를 통해 쌍방향적 소통을 할 수 있고, 이는 곧 적극적이고 능동적인 전시 관람으로 이어진다. 닫혀있던 공간, ‘파티션'의 경계를 허물고 ‘파티’가 시작된다.</div>
+		<div class="draggable" id="countdown"></div>
+		<div class="draggable" id="facebook_btn"><a href="https://www.facebook.com/kmupartitionparty" target="_blank">facebook</a></div>
+		<div class="draggable" id="instagram_btn"><a href="http://instagram.com/partition_party" target="_blank">Instagram</a></div>
+		<div class="draggable" id="medium_btn"><a href="https://medium.com/@partitionparty" target="_blank">Medium</a></div>
+		<div class="draggable" id="twitter_btn"><a href="https://twitter.com/KMUVCD2014" target="_blank">twitter</a></div>
+		
+	</body>
 
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
-        <script src='http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.2.min.js'></script>
-        <script src='./js/helper.js'></script>
-        <script src='./js/global_variables.js'></script>
-        <script src='./js/main.js'></script>
-        <script src="js/plugins.js"></script>
-    </body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
+    <script src='http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.2.min.js'></script>
+    <script src='./js/helper.js'></script>
+    <script src='./js/global_variables.js'></script>
+    <script src='./js/main.js'></script>
+    <script src="js/plugins.js"></script>
 </html>

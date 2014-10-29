@@ -1,17 +1,9 @@
 @import url('../font/NanumBarunGothic.eot');
 
-/*@font-face{
-  font-family: NBG;
-  src: url(//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/v3/NanumGothic-Bold.eot);
-  src: url(//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/v3/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
-  url(//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/v3/NanumGothic-Bold.woff) format('woff'),
-  url(//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/v3/NanumGothic-Bold.ttf) format('truetype');
-}
 
-*/
 
 body {
-  /*font-family: NBG;*/
+
   font-family: 'nanumbarungothic';
 	user-select: none;
 	-moz-user-select: none;
@@ -181,8 +173,8 @@ table {
 	border-collapse: collapse;
 	margin: 0px;
 	position: absolute;
-	top: 360px;
-	left: 1040px;
+	top: 480px;
+	left: 960px;
 }
 
 td{
@@ -224,7 +216,7 @@ div#countdown {
   	-webkit-box-sizing: border-box;
   	border: 1px black solid;
   	position: absolute;
-  	font-size: 23px;
+  	font-size: 20px;
   	top: 120px;
   	left: 860px;
   	padding: 5px;
@@ -235,23 +227,7 @@ div#countdown {
 div#category {
 	height: 40px;
 	width: 680px;
-	padding: 5px;
-	background-color: white;
-	box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-  	-webkit-box-sizing: border-box;
-  	border: 2px black solid;
-  	position: absolute;
-  	top: 520px;
-  	left: 120px;
-    font-size: 12px;
-    font-weight: bold;   
-}
-
-div#title {
-	height: 40px;
-	width: 420px;
-	padding: 5px;
+	padding: 8px;
 	background-color: white;
 	box-sizing: border-box;
   	-moz-box-sizing: border-box;
@@ -259,15 +235,33 @@ div#title {
   	border: 2px black solid;
   	position: absolute;
   	top: 40px;
-  	left: 1000px;
-    font-size: 12px;
+  	left: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;   
+}
+
+div#title {
+	height: 40px;
+	width: 360px;
+	padding: 8px;
+	background-color: white;
+	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	border: 2px black solid;
+  	position: absolute;
+  	top: 100px;
+  	left: 100px;
+    text-align: center;
+    font-size: 20px;
     font-weight: bold; 
 }
 
 div#date {
 	height: 40px;
-	width: 340px;
-	padding: 5px;
+	width: 300px;
+	padding: 8px;
 	background-color: white;
 	box-sizing: border-box;
   	-moz-box-sizing: border-box;
@@ -275,24 +269,26 @@ div#date {
   	border: 2px black solid;
   	position: absolute;
   	top: 580px;
-  	left: 480px;
-    font-size: 12px;
+  	left: 600px;
+    text-align: center;
+    font-size: 20px;
     font-weight: bold; 
 }
 
 div#location {
 	height: 40px;
-	width: 320px;
-	padding: 5px;
+	width: 280px;
+	padding: 8px;
 	background-color: white;
 	box-sizing: border-box;
   	-moz-box-sizing: border-box;
   	-webkit-box-sizing: border-box;
   	border: 2px black solid;
   	position: absolute;
-  	top: 320px;
-  	left: 1060px;
-  	font-size: 12px;
+  	top: 700px;
+  	left: 480px;
+    text-align: center;
+  	font-size: 20px;
     font-weight: bold; 
   
 }
@@ -300,35 +296,35 @@ div#location {
 div#homepage {
 	height: 40px;
 	width: 280px;
-	padding: 5px;
+	padding: 8px;
 	background-color: white;
 	box-sizing: border-box;
   	-moz-box-sizing: border-box;
   	-webkit-box-sizing: border-box;
   	border: 2px black solid;
   	position: absolute;
-  	top: 620px;
-  	left: 820px;
+  	top: 760px;
+  	left: 700px;
     text-align: center;
-  	font-size: 23px;
+  	font-size: 20px;
     font-weight: bold; 
 }
 
 
 div#introduction {
 	height: relative;
-	width: 1000px;
-	padding: 3px;
+	width: 360px;
+	padding: 5px;
 	background-color: white;
 	box-sizing: border-box;
   	-moz-box-sizing: border-box;
   	-webkit-box-sizing: border-box;
   	border: 1px black solid;
   	position: absolute;
-  	top: 680px;
-  	left: 380px;
-    line-height: 20px;
-  	font-size: 12px;
+  	top: 480px;
+  	left: 60px;
+    line-height: 26px;
+  	font-size: 14px;
 }
 
 div#facebook_btn {
@@ -343,7 +339,7 @@ div#facebook_btn {
   	font-size: 12px;
   	position: absolute;
   	top: 100px;
-  	left: 1000px;
+  	left: 1020px;
 }
 
 div#instagram_btn {
@@ -358,7 +354,7 @@ div#instagram_btn {
   	font-size: 12px;
   	position: absolute;
   	top: 140px;
-  	left: 1000px;
+  	left: 1020px;
 }
 
 div#medium_btn {
@@ -373,7 +369,7 @@ div#medium_btn {
   	font-size: 12px;
   	position: absolute;
   	top: 180px;
-  	left: 1000px;
+  	left: 1020px;
 }
 
 div#twitter_btn {
@@ -388,7 +384,7 @@ div#twitter_btn {
   	font-size: 12px;
   	position: absolute;
   	top: 220px;
-  	left: 1000px;
+  	left: 1020px;
 }
 
 div#live_contents {
@@ -402,8 +398,8 @@ div#live_contents {
   	border: 2px black solid;
   	font-size: 12px;
   	position: absolute;
-  	top: 40px;
-  	left: 60px;
+  	top: 60px;
+  	left: 80px;
   	overflow: hidden;
 }
 
