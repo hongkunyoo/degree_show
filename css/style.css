@@ -416,9 +416,8 @@ iframe {
 }
 
 div#msg_container {
-	background: red;
 	padding: 2px;
-	height: 450px;
+	height: 440px;
 	width: 200px;
 	position: absolute;
 	top: 0px;
@@ -439,6 +438,10 @@ div.position {
 	top: 0px;
 	left: 0px; 
 	z-index: 0;
+}
+
+div.list_item {
+	border-bottom: grey 1px solid;
 }
 
 a{ color: blue; }

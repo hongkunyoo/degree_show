@@ -26,11 +26,11 @@ var init = function(){
 	createMergedCell(_sheetUnit, totalCellNum);
 
 	countDownTimer('10/31/2014 09:00 AM', 'countdown');
-	setMouseEvent(contents);
+	//setMouseEvent(contents);
 	positionBox = document.createElement('div');
 	positionBox.className = 'position';
 	window.onmousemove = checkRefresh;
-	window.onmouseup = function(){ put(); isMouseDown = false; window.onmousemove = checkRefresh; };
+	//window.onmouseup = function(){ put(); isMouseDown = false; window.onmousemove = checkRefresh; };
 };
 
 var createSheet = function(obj, num){
@@ -102,7 +102,7 @@ var setMergedCell = function(obj){
 var checkRefresh = function(e){
 	var distanceX = Math.abs(e.pageX-pastCurPosX);
 	var distanceY = Math.abs(e.pageY-pastCurPosY);
-	if(distanceX>50 && distanceY>50){ createMergedCell(_sheetUnit, totalCellNum); };
+	if(distanceX>200 && distanceY>200){ createMergedCell(_sheetUnit, totalCellNum); };
 	pastCurPosX = e.pageX;
 	pastCurPosY = e.pageY;
 };
@@ -158,7 +158,7 @@ var setMoving = function(){
 	setTimeout(setSpeed, 1000);
 	setInterval(setSpeed, 5000);
 };
-
+/*
 var setMouseEvent = function(arr){
 	arr.push(document.getElementById('information'));
 	arr.push(document.getElementById('category'));
@@ -196,7 +196,7 @@ var put = function(){
 	target.style.top = _cell.length * Math.round(target.offsetTop/_cell.length);
 	target.removeChild(target.lastChild);
 };
-
+*/
 $(function(){
 	$.main = {};
 	var mClient = new MobileClient(GlobalVariables.REAL_URL, GlobalVariables.REAL_KEY);
@@ -206,6 +206,8 @@ $(function(){
 	$.main.messageHelper.fetchMessage({
 		success: function(result) {
 			$("#msg_container").append("<div class='list_item'>"+prettify(result.result)+"</div>");
+			var test = document.getElementById('msg_container');
+			test.scrollTop = test.scrollHeight;
 			// window.scrollBy(x,y);			
 		}, error: function(err) {
 			
@@ -221,10 +223,10 @@ $(function(){
 		var ret = "";
 		for (var i in item) {
 			if (filter.indexOf(i) != -1){
-				if(item[i] == "type"){	ret += ("<div><span class='value'>"+itme[i]+" : </span></div>");	}
-				else if(item[i] == "content"){	ret += ("<div><span class='value'>"+item[i]+"</span></div>");	}
-				else if(item[i] == "time"){	ret += ("<div><span class='value'> ("+item[i]+")</span></div>");	}
-				//ret += ("<div><span class='mykey'>"+i+"</span><span class='value'>"+item[i] +"</span></div>");
+				if(i == "sender"){	ret += ("<span class='value'><i>"+item[i]+"</i></span>");	}
+				else if(i == "content"){	ret += ("<div><span class='value'>\""+item[i]+"\"</span></div>");	}
+				else if(i == "time"){	ret += ("<span class='value'><i> ("+item[i]+")</i></span>");	}
+				// ret += ("<div><span class='mykey'>"+i+"</span><span class='value'>"+item[i] +"</span></div>");
 			}
 		}	
 		// var d = new Date();
