@@ -244,7 +244,7 @@ div#category {
   	top: 220px;
   	left: 600px;
     text-align: center;
-    font-size: 23px;
+    font-size: 12px;
     font-weight: bold;   
 }
 
@@ -261,7 +261,7 @@ div#title {
   	top: 60px;
   	left: 500px;
     text-align: center;
-    font-size: 23px;
+    font-size: 12px;
     font-weight: bold; 
 }
 
@@ -278,7 +278,7 @@ div#date {
   	top: 280px;
   	left: 700px;
     text-align: center;
-    font-size: 23px;
+    font-size: 12px;
     font-weight: bold; 
 }
 
@@ -295,8 +295,7 @@ div#location {
   	top: 600px;
   	left: 360px;
     text-align: center;
-    line-height: 23px;
-  	font-size: 23px;
+  	font-size: 12px;
     font-weight: bold; 
   
 }
