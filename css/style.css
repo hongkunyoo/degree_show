@@ -181,8 +181,8 @@ table {
 	border-collapse: collapse;
 	margin: 0px;
 	position: absolute;
-	top: 40px;
-	left: 60px;
+	top: 360px;
+	left: 1040px;
 }
 
 td{
@@ -229,6 +229,7 @@ div#countdown {
   	left: 860px;
   	padding: 5px;
     text-align: center;
+    display: none;
 }
 
 div#category {
@@ -241,9 +242,8 @@ div#category {
   	-webkit-box-sizing: border-box;
   	border: 2px black solid;
   	position: absolute;
-  	top: 220px;
-  	left: 600px;
-    text-align: center;
+  	top: 520px;
+  	left: 120px;
     font-size: 12px;
     font-weight: bold;   
 }
@@ -258,9 +258,8 @@ div#title {
   	-webkit-box-sizing: border-box;
   	border: 2px black solid;
   	position: absolute;
-  	top: 60px;
-  	left: 500px;
-    text-align: center;
+  	top: 40px;
+  	left: 1000px;
     font-size: 12px;
     font-weight: bold; 
 }
@@ -275,9 +274,8 @@ div#date {
   	-webkit-box-sizing: border-box;
   	border: 2px black solid;
   	position: absolute;
-  	top: 280px;
-  	left: 700px;
-    text-align: center;
+  	top: 580px;
+  	left: 480px;
     font-size: 12px;
     font-weight: bold; 
 }
@@ -292,9 +290,8 @@ div#location {
   	-webkit-box-sizing: border-box;
   	border: 2px black solid;
   	position: absolute;
-  	top: 600px;
-  	left: 360px;
-    text-align: center;
+  	top: 320px;
+  	left: 1060px;
   	font-size: 12px;
     font-weight: bold; 
   
@@ -310,8 +307,8 @@ div#homepage {
   	-webkit-box-sizing: border-box;
   	border: 2px black solid;
   	position: absolute;
-  	top: 700px;
-  	left: 260px;
+  	top: 620px;
+  	left: 820px;
     text-align: center;
   	font-size: 23px;
     font-weight: bold; 
@@ -320,7 +317,7 @@ div#homepage {
 
 div#introduction {
 	height: relative;
-	width: 360px;
+	width: 1000px;
 	padding: 3px;
 	background-color: white;
 	box-sizing: border-box;
@@ -328,10 +325,10 @@ div#introduction {
   	-webkit-box-sizing: border-box;
   	border: 1px black solid;
   	position: absolute;
-  	top: 380px;
-  	left: 980px;
-    line-height: 25px;
-  	font-size: 15px;
+  	top: 680px;
+  	left: 380px;
+    line-height: 20px;
+  	font-size: 12px;
 }
 
 div#facebook_btn {
@@ -345,8 +342,8 @@ div#facebook_btn {
   	border: 1px black solid;
   	font-size: 12px;
   	position: absolute;
-  	top: 560px;
-  	left: 160px;
+  	top: 100px;
+  	left: 1000px;
 }
 
 div#instagram_btn {
@@ -360,8 +357,8 @@ div#instagram_btn {
   	border: 1px black solid;
   	font-size: 12px;
   	position: absolute;
-  	top: 560px;
-  	left: 260px;
+  	top: 140px;
+  	left: 1000px;
 }
 
 div#medium_btn {
@@ -375,8 +372,8 @@ div#medium_btn {
   	border: 1px black solid;
   	font-size: 12px;
   	position: absolute;
-  	top: 560px;
-  	left: 360px;
+  	top: 180px;
+  	left: 1000px;
 }
 
 div#twitter_btn {
@@ -390,23 +387,23 @@ div#twitter_btn {
   	border: 1px black solid;
   	font-size: 12px;
   	position: absolute;
-  	top: 560px;
-  	left: 460px;
+  	top: 220px;
+  	left: 1000px;
 }
 
 div#live_contents {
-	height: 600px;
-	width: 1200px;
+	height: 450px;
+	width: 920px;
 	padding: 0px;
 	background-color: white;
 	box-sizing: border-box;
   	-moz-box-sizing: border-box;
   	-webkit-box-sizing: border-box;
-  	border: 1px black solid;
+  	border: 2px black solid;
   	font-size: 12px;
   	position: absolute;
-  	top: 30px;
-  	left: 100px;
+  	top: 40px;
+  	left: 60px;
   	overflow: hidden;
 }
 
