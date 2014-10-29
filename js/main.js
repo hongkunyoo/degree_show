@@ -222,8 +222,8 @@ $(function(){
 		for (var i in item) {
 			if (filter.indexOf(i) != -1)
 				if(item == "type"){	ret += ("<div><span class='value'>"+itme[i]+" : </span></div>");	}
-				else if(item == "sender"){	ret += ("<div><span class='value'>"+item[i]+"</span></div>");	}
-				else if(item == "time"){	ret += ("<div><span class='value'> ("+item[i]+")</span></div>");	}
+				else if(item == "content"){	ret += ("<div><span class='value'>"+item[i]+"</span></div>");	}
+				else if(itemㅇ == "time"){	ret += ("<div><span class='value'> ("+item[i]+")</span></div>");	}
 				//ret += ("<div><span class='mykey'>"+i+"</span><span class='value'>"+item[i] +"</span></div>");
 		}	
 		// var d = new Date();
