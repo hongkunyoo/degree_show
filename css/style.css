@@ -417,11 +417,11 @@ iframe {
 
 div#msg_container {
 	padding: 2px;
-	height: 600px;
-	width: 240px;
+	height: 450px;
+	width: 200px;
 	position: absolute;
 	top: 0px;
-	left: 960px;
+	left: 720px;
 }
 
 div.position {
