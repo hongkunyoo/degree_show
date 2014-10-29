@@ -392,8 +392,8 @@ div#twitter_btn {
 }
 
 div#live_contents {
-	height: 450px;
-	width: 920px;
+	height: 460px;
+	width: 940px;
 	padding: 0px;
 	background-color: white;
 	box-sizing: border-box;
@@ -417,11 +417,11 @@ iframe {
 
 div#msg_container {
 	padding: 2px;
-	height: 440px;
-	width: 200px;
+	height: 450px;
+	width: 190px;
 	position: absolute;
 	top: 0px;
-	left: 720px;
+	left: 740px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }

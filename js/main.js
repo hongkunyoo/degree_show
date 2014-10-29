@@ -25,7 +25,7 @@ var init = function(){
 	setMoving();
 	createMergedCell(_sheetUnit, totalCellNum);
 
-	countDownTimer('10/31/2014 09:00 AM', 'countdown');
+	//countDownTimer('10/31/2014 09:00 AM', 'countdown');
 	//setMouseEvent(contents);
 	positionBox = document.createElement('div');
 	positionBox.className = 'position';
@@ -106,7 +106,7 @@ var checkRefresh = function(e){
 	pastCurPosX = e.pageX;
 	pastCurPosY = e.pageY;
 };
-
+/*
 var countDownTimer = function(dt, id){
 	var end = new Date(dt);
 	var _second = 1000;
@@ -126,7 +126,7 @@ var countDownTimer = function(dt, id){
 	};
 	timer = setInterval(showRemaining, 1000);
 };
-
+*/
 var setMoving = function(){
 	var slowMovingImgs = document.getElementById('moving_images_slow');
 	var mediumMovingImgs = document.getElementById('moving_images_medium');
