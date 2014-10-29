@@ -240,6 +240,5 @@ $(function(){
 		return number;
 	}
 
-
 	init();
-});
+	};
