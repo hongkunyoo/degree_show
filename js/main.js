@@ -220,11 +220,12 @@ $(function(){
 		item.time = time;
 		var ret = "";
 		for (var i in item) {
-			if (filter.indexOf(i) != -1)
-				if(item == "type"){	ret += ("<div><span class='value'>"+itme[i]+" : </span></div>");	}
-				else if(item == "content"){	ret += ("<div><span class='value'>"+item[i]+"</span></div>");	}
-				else if(itemㅇ == "time"){	ret += ("<div><span class='value'> ("+item[i]+")</span></div>");	}
+			if (filter.indexOf(i) != -1){
+				if(item[i] == "type"){	ret += ("<div><span class='value'>"+itme[i]+" : </span></div>");	}
+				else if(item[i] == "content"){	ret += ("<div><span class='value'>"+item[i]+"</span></div>");	}
+				else if(item[i] == "time"){	ret += ("<div><span class='value'> ("+item[i]+")</span></div>");	}
 				//ret += ("<div><span class='mykey'>"+i+"</span><span class='value'>"+item[i] +"</span></div>");
+			}
 		}	
 		// var d = new Date();
 		// var time = fillZeor(d.getHours()) + ":" + fillZeor(d.getMinutes());
