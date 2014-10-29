@@ -416,6 +416,7 @@ iframe {
 }
 
 div#msg_container {
+	background: red;
 	padding: 2px;
 	height: 450px;
 	width: 200px;
